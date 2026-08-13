@@ -526,58 +526,9 @@
     <div class="header-right">TEAM ACE · SDS PLATFORM</div>
   </div>
 
-  <div class="slide-content" style="display:grid; grid-template-columns: 1fr 1.05fr; gap:20px; align-items:center;">
-    <!-- ALGORITHM FLOWCHART IMAGE -->
-    <div style="text-align:center; height:100%; display:flex; flex-direction:column; justify-content:center; align-items:center;">
-      <div style="font-size:12.5px; font-weight:800; color:var(--text-primary); margin-bottom:6px;">
-        [ System Decision Algorithm Flowchart ]
-      </div>
-      <img src="./algorithm_flowchart.jpg" alt="Algorithm Flowchart" style="max-height:360px; width:auto; max-width:100%; border-radius:6px; border:1px solid var(--border); box-shadow:0 2px 8px rgba(0,0,0,0.06); object-fit:contain;">
-    </div>
-
-    <!-- Operating Modes Table -->
-    <div>
-      <div style="font-size:15px; font-weight:800; color:var(--text-primary); margin-bottom:8px;">
-        Six Operating Modes Summary
-      </div>
-      <table class="custom-table">
-        <thead>
-          <tr>
-            <th>Operating Mode</th>
-            <th>Description & Action</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td class="bold" style="color:var(--accent-orange);">FLOOD_PREVENTION</td>
-            <td>P2 Pre-drain active (empties tank to &le; 10%)</td>
-          </tr>
-          <tr>
-            <td class="bold" style="color:var(--accent-green);">GREENERY_IRRIGATION</td>
-            <td>P1 Water Pump 12 s pulse ON (~0.34 L micro-dose)</td>
-          </tr>
-          <tr>
-            <td class="bold">IRRIGATION_SOAK</td>
-            <td>Waits 10 min for soil absorption before next evaluation</td>
-          </tr>
-          <tr>
-            <td class="bold">LOW_WATER_WARNING</td>
-            <td>Hot & dry, but tank storage level &le; 20% (holds water)</td>
-          </tr>
-          <tr>
-            <td class="bold">STANDBY</td>
-            <td>Normal monitoring mode (holds harvested rainwater)</td>
-          </tr>
-          <tr>
-            <td class="bold" style="color:#EF4444;">FAIL_SAFE</td>
-            <td>Sensor/API outage — all relays shut OFF for safety</td>
-          </tr>
-        </tbody>
-      </table>
-
-      <div style="margin-top:10px; font-size:11px; color:var(--text-muted); line-height:1.5;">
-        * <strong>Strict Priority Rule:</strong> Flood prevention always overrides irrigation. A rain forecast arriving mid-irrigation instantly cancels P1 and activates P2 pre-drainage.
-      </div>
+  <div class="slide-content" style="justify-content:center; align-items:center; text-align:center;">
+    <div style="width:100%; height:100%; display:flex; flex-direction:column; justify-content:center; align-items:center;">
+      <img src="./algorithm_flowchart.jpg" alt="Algorithm Flowchart" style="max-height:480px; width:auto; max-width:100%; border-radius:8px; border:1px solid var(--border); box-shadow:0 4px 16px rgba(0,0,0,0.08); object-fit:contain;">
     </div>
   </div>
 
