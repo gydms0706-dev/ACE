@@ -7,7 +7,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
 <style>
-  /* ── MINIMALIST A4 LANDSCAPE PRESENTATION SYSTEM ── */
+  /* ── MINIMALIST 16:9 WIDESCREEN PRESENTATION SYSTEM ── */
   *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
   :root {
@@ -25,7 +25,7 @@
     --accent-orange:#C2410C;
     
     --slide-width:  297mm;
-    --slide-height: 210mm;
+    --slide-height: 167.06mm;
   }
 
   html, body {
@@ -49,7 +49,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding: 14mm 20mm 12mm 20mm;
+    padding: 10mm 16mm 8mm 16mm;
   }
 
   @media print {
@@ -59,10 +59,10 @@
       border-radius: 0;
       box-shadow: none;
       width: 297mm;
-      height: 210mm;
+      height: 167.06mm;
     }
     @page {
-      size: A4 landscape;
+      size: 297mm 167.06mm;
       margin: 0;
     }
   }
@@ -73,24 +73,24 @@
     justify-content: space-between;
     align-items: flex-end;
     border-bottom: 2px solid var(--text-primary);
-    padding-bottom: 8px;
+    padding-bottom: 6px;
   }
   .header-left .category {
-    font-size: 11px;
+    font-size: 10.5px;
     font-weight: 800;
     letter-spacing: 1.8px;
     color: var(--accent-blue);
     text-transform: uppercase;
-    margin-bottom: 3px;
+    margin-bottom: 2px;
   }
   .header-left .slide-title {
-    font-size: 22px;
+    font-size: 20px;
     font-weight: 800;
     color: var(--text-primary);
     letter-spacing: -0.4px;
   }
   .header-right {
-    font-size: 11px;
+    font-size: 10.5px;
     font-weight: 700;
     color: var(--text-muted);
   }
@@ -100,8 +100,8 @@
     justify-content: space-between;
     align-items: center;
     border-top: 1px solid var(--border);
-    padding-top: 8px;
-    font-size: 10px;
+    padding-top: 6px;
+    font-size: 9.5px;
     color: var(--text-muted);
   }
   .footer-num { font-weight: 800; color: var(--text-primary); }
@@ -112,8 +112,8 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 14px 0;
-    gap: 16px;
+    padding: 10px 0;
+    gap: 12px;
   }
 
   /* ── CARDS & TABLES ── */
@@ -121,33 +121,33 @@
     background: var(--bg-card);
     border: 1px solid var(--border);
     border-radius: 8px;
-    padding: 16px;
+    padding: 14px;
   }
   .card-title {
-    font-size: 14px;
+    font-size: 13.5px;
     font-weight: 800;
     color: var(--text-primary);
-    margin-bottom: 6px;
+    margin-bottom: 5px;
   }
 
-  .grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
-  .grid-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
-  .grid-4 { display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px; }
+  .grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+  .grid-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; }
+  .grid-4 { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; }
 
   .custom-table {
     width: 100%;
     border-collapse: collapse;
-    font-size: 12px;
+    font-size: 11px;
   }
   .custom-table th {
     background: var(--text-primary);
     color: #FFFFFF;
     font-weight: 700;
-    padding: 10px 12px;
+    padding: 8px 10px;
     text-align: left;
   }
   .custom-table td {
-    padding: 9px 12px;
+    padding: 7px 10px;
     border-bottom: 1px solid var(--border);
     color: var(--text-body);
   }
@@ -157,9 +157,9 @@
 
   .badge {
     display: inline-block;
-    padding: 4px 12px;
+    padding: 3px 10px;
     border-radius: 20px;
-    font-size: 11px;
+    font-size: 10.5px;
     font-weight: 700;
   }
   .badge-blue { background: var(--accent-bg); color: var(--accent-blue); border: 1px solid #BAE6FD; }
@@ -172,9 +172,9 @@
 <!-- ════════════════════════════════════════════
   SLIDE 1 : COVER
 ════════════════════════════════════════════ -->
-<section class="slide" style="padding: 20mm 22mm 14mm 22mm; position:relative;">
-  <div style="display:flex; justify-content:space-between; align-items:center; border-bottom:3px solid var(--text-primary); padding-bottom:14px; position:relative; z-index:1;">
-    <div style="font-size:12px; font-weight:800; letter-spacing:2px; color:var(--text-primary);">
+<section class="slide" style="padding: 14mm 18mm 10mm 18mm; position:relative;">
+  <div style="display:flex; justify-content:space-between; align-items:center; border-bottom:3px solid var(--text-primary); padding-bottom:12px; position:relative; z-index:1;">
+    <div style="font-size:11.5px; font-weight:800; letter-spacing:2px; color:var(--text-primary);">
       SMART CITY CLIMATE RESPONSE PROJECT
     </div>
     <div class="badge badge-blue">
@@ -182,35 +182,35 @@
     </div>
   </div>
 
-  <div class="slide-content" style="display:flex; flex-direction:row; align-items:center; justify-content:space-between; gap:24px; position:relative; z-index:1;">
+  <div class="slide-content" style="display:flex; flex-direction:row; align-items:center; justify-content:space-between; gap:20px; position:relative; z-index:1;">
     <!-- LEFT TEXT & METADATA CONTENT -->
-    <div style="flex:1; max-width:560px;">
-      <div style="font-size:13.5px; font-weight:800; color:var(--accent-blue); letter-spacing:2px; text-transform:uppercase; margin-bottom:8px;">
+    <div style="flex:1; max-width:540px;">
+      <div style="font-size:12.5px; font-weight:800; color:var(--accent-blue); letter-spacing:2px; text-transform:uppercase; margin-bottom:6px;">
         Team ACE Project Presentation
       </div>
-      <h1 style="font-size:42px; font-weight:900; line-height:1.18; color:var(--text-primary); letter-spacing:-1.2px;">
+      <h1 style="font-size:38px; font-weight:900; line-height:1.16; color:var(--text-primary); letter-spacing:-1px;">
         <span style="color:var(--accent-blue);">SMART DRAIN &</span><br>
         HEATWAVE RESPONSE SYSTEM
       </h1>
-      <p style="font-size:15px; color:var(--text-body); margin-top:16px; line-height:1.6;">
+      <p style="font-size:14px; color:var(--text-body); margin-top:12px; line-height:1.55;">
         An integrated urban climate management platform that uses real-time weather API forecasts and IoT sensor data to proactively address <strong>heatwave droughts</strong> (automated micro-irrigation) and <strong>torrential rain</strong> (smart pre-storm drainage) using a single rainwater storage tank.
       </p>
 
-      <div class="grid-2" style="border-top:1px solid var(--border); padding-top:18px; margin-top:20px; max-width:480px;">
+      <div class="grid-2" style="border-top:1px solid var(--border); padding-top:14px; margin-top:14px; max-width:460px;">
         <div>
-          <div style="font-size:11px; font-weight:800; color:var(--text-muted); text-transform:uppercase;">Project Title</div>
-          <div style="font-size:14px; font-weight:800; color:var(--text-primary); margin-top:4px;">Smart Drain & Heatwave System</div>
+          <div style="font-size:10.5px; font-weight:800; color:var(--text-muted); text-transform:uppercase;">Project Title</div>
+          <div style="font-size:13.5px; font-weight:800; color:var(--text-primary); margin-top:3px;">Smart Drain & Heatwave System</div>
         </div>
         <div>
-          <div style="font-size:11px; font-weight:800; color:var(--accent-blue); text-transform:uppercase;">Team</div>
-          <div style="font-size:14px; font-weight:800; color:var(--accent-blue); margin-top:4px;">Team ACE</div>
+          <div style="font-size:10.5px; font-weight:800; color:var(--accent-blue); text-transform:uppercase;">Team</div>
+          <div style="font-size:13.5px; font-weight:800; color:var(--accent-blue); margin-top:3px;">Team ACE</div>
         </div>
       </div>
     </div>
 
-    <!-- RIGHT FRAMELESS LARGE WATER DROPLETS & BUBBLES VECTOR (NO BOX, NO TEXT, HIGH VISIBILITY OPACITY) -->
-    <div style="width:360px; height:340px; display:flex; align-items:center; justify-content:center; flex-shrink:0;">
-      <svg width="360" height="340" viewBox="0 0 360 340" fill="none" xmlns="http://www.w3.org/2000/svg" style="display:block;">
+    <!-- RIGHT FRAMELESS LARGE WATER DROPLETS & BUBBLES VECTOR -->
+    <div style="width:330px; height:290px; display:flex; align-items:center; justify-content:center; flex-shrink:0;">
+      <svg width="330" height="290" viewBox="0 0 360 340" fill="none" xmlns="http://www.w3.org/2000/svg" style="display:block;">
         <defs>
           <radialGradient id="bubbleGlow1" cx="30%" cy="30%" r="70%">
             <stop offset="0%" stop-color="#7DD3FC" stop-opacity="0.9"/>
@@ -231,42 +231,23 @@
           </linearGradient>
         </defs>
 
-        <!-- Outer Soft Water Ripple Rings -->
         <circle cx="180" cy="170" r="145" stroke="#BAE6FD" stroke-width="2.5" stroke-dasharray="8 6" opacity="0.65"/>
         <circle cx="180" cy="170" r="115" stroke="#38BDF8" stroke-width="2" opacity="0.5"/>
-
-        <!-- Main Center Water Droplet -->
         <path d="M 180,50 C 180,50 245,130 245,170 C 245,205 216,234 180,234 C 144,234 115,205 115,170 C 115,130 180,50 180,50 Z" fill="url(#dropGradMain)" opacity="0.9"/>
-        <!-- Droplet Light Highlight Curve -->
         <path d="M 160,110 C 150,130 145,150 145,165" stroke="#FFFFFF" stroke-width="5" stroke-linecap="round" opacity="0.85"/>
         <circle cx="195" cy="180" r="10" fill="#FFFFFF" opacity="0.5"/>
-
-        <!-- Surrounding Floating Water Bubbles (Various Sizes & Clear Opacity) -->
-        <!-- Bubble Top Right -->
         <circle cx="270" cy="85" r="32" fill="url(#bubbleGlow1)"/>
         <circle cx="260" cy="75" r="9" fill="#FFFFFF" opacity="0.75"/>
-
-        <!-- Bubble Bottom Left -->
         <circle cx="85" cy="225" r="42" fill="url(#bubbleGlow2)"/>
         <circle cx="72" cy="210" r="12" fill="#FFFFFF" opacity="0.8"/>
-
-        <!-- Bubble Small Mid Left -->
         <circle cx="70" cy="110" r="22" fill="url(#bubbleGlow1)"/>
         <circle cx="64" cy="102" r="6" fill="#FFFFFF" opacity="0.7"/>
-
-        <!-- Bubble Small Top Left -->
         <circle cx="115" cy="45" r="15" fill="url(#bubbleGlow2)"/>
         <circle cx="110" cy="40" r="4" fill="#FFFFFF" opacity="0.8"/>
-
-        <!-- Bubble Mid Right -->
         <circle cx="295" cy="185" r="25" fill="url(#bubbleGlow1)"/>
         <circle cx="288" cy="178" r="7" fill="#FFFFFF" opacity="0.75"/>
-
-        <!-- Bubble Bottom Right Tiny -->
         <circle cx="245" cy="275" r="18" fill="url(#bubbleGlow2)"/>
         <circle cx="240" cy="270" r="5" fill="#FFFFFF" opacity="0.8"/>
-
-        <!-- Small Splash Accent Dots -->
         <circle cx="215" cy="65" r="7" fill="#38BDF8" opacity="0.8"/>
         <circle cx="140" cy="30" r="5" fill="#7DD3FC" opacity="0.85"/>
         <circle cx="105" cy="270" r="8" fill="#0284C7" opacity="0.75"/>
@@ -293,16 +274,16 @@
     <div class="header-right">TEAM ACE · SDS PLATFORM</div>
   </div>
 
-  <div class="slide-content" style="justify-content:center; gap:20px;">
-    <div style="font-size:16.5px; font-weight:700; color:var(--accent-blue); text-align:center; line-height:1.5; margin-bottom:4px;">
+  <div class="slide-content" style="justify-content:center; gap:12px;">
+    <div style="font-size:15px; font-weight:700; color:var(--accent-blue); text-align:center; line-height:1.4; margin-bottom:2px;">
       Modern cities face compound climate hazards from alternating heatwaves and flash floods.
     </div>
 
     <div class="grid-3">
       <!-- CARD 1: HEATWAVE & DROUGHT -->
-      <div class="card" style="text-align:center; padding:18px 16px;">
-        <div style="width:46px; height:46px; border-radius:50%; background:#FFEDD5; border:1.5px solid #FDBA74; display:flex; align-items:center; justify-content:center; margin:0 auto 12px;">
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#C2410C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <div class="card" style="text-align:center; padding:14px 12px;">
+        <div style="width:40px; height:40px; border-radius:50%; background:#FFEDD5; border:1.5px solid #FDBA74; display:flex; align-items:center; justify-content:center; margin:0 auto 8px;">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#C2410C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
             <circle cx="12" cy="12" r="5"/>
             <line x1="12" y1="1" x2="12" y2="3"/>
             <line x1="12" y1="21" x2="12" y2="23"/>
@@ -315,17 +296,17 @@
           </svg>
         </div>
         <div class="card-title" style="color:var(--accent-orange);">1. Heatwave & Drought</div>
-        <div style="font-size:11.5px; color:var(--text-body); line-height:1.6; text-align:left; margin-top:8px;">
-          • Extreme summer heat dries soil below 30% moisture.<br>
-          • Urban heat island effect causes plant wilting and severe pedestrian discomfort.<br>
-          • Manual watering wastes valuable municipal tap water.
+        <div style="font-size:11px; color:var(--text-body); line-height:1.5; text-align:left; margin-top:6px;">
+          • Extreme heat dries soil below 30% moisture.<br>
+          • Heat island effect causes plant wilting & discomfort.<br>
+          • Manual watering wastes municipal tap water.
         </div>
       </div>
 
       <!-- CARD 2: TORRENTIAL RAIN & FLOODING -->
-      <div class="card" style="text-align:center; padding:18px 16px;">
-        <div style="width:46px; height:46px; border-radius:50%; background:#E0F2FE; border:1.5px solid #7DD3FC; display:flex; align-items:center; justify-content:center; margin:0 auto 12px;">
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#0284C7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <div class="card" style="text-align:center; padding:14px 12px;">
+        <div style="width:40px; height:40px; border-radius:50%; background:#E0F2FE; border:1.5px solid #7DD3FC; display:flex; align-items:center; justify-content:center; margin:0 auto 8px;">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#0284C7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
             <path d="M20 16.58A5 5 0 0 0 18 7h-1.26A8 8 0 1 0 4 15.25"/>
             <line x1="8" y1="16" x2="8" y2="20"/>
             <line x1="12" y1="18" x2="12" y2="22"/>
@@ -333,41 +314,41 @@
           </svg>
         </div>
         <div class="card-title" style="color:var(--accent-blue);">2. Torrential Rain & Flooding</div>
-        <div style="font-size:11.5px; color:var(--text-body); line-height:1.6; text-align:left; margin-top:8px;">
-          • Sudden downpours instantly exceed local storm sewer capacity.<br>
-          • Rainwater tanks fill to 100% capacity and overflow into streets.<br>
-          • Lack of pre-storm drainage leads to localized urban flooding.
+        <div style="font-size:11px; color:var(--text-body); line-height:1.5; text-align:left; margin-top:6px;">
+          • Downpours exceed storm sewer capacity.<br>
+          • Rainwater tanks fill to 100% and overflow into streets.<br>
+          • Lack of pre-storm drainage leads to urban flooding.
         </div>
       </div>
 
       <!-- CARD 3: LIMITS OF CONVENTIONAL SYSTEMS -->
-      <div class="card" style="text-align:center; padding:18px 16px;">
-        <div style="width:46px; height:46px; border-radius:50%; background:#F1F5F9; border:1.5px solid #CBD5E1; display:flex; align-items:center; justify-content:center; margin:0 auto 12px;">
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#475569" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <div class="card" style="text-align:center; padding:14px 12px;">
+        <div style="width:40px; height:40px; border-radius:50%; background:#F1F5F9; border:1.5px solid #CBD5E1; display:flex; align-items:center; justify-content:center; margin:0 auto 8px;">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#475569" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
             <circle cx="12" cy="12" r="10"/>
             <line x1="12" y1="8" x2="12" y2="12"/>
             <line x1="12" y1="16" x2="12.01" y2="16"/>
           </svg>
         </div>
         <div class="card-title" style="color:var(--text-primary);">3. Limits of Conventional Systems</div>
-        <div style="font-size:11.5px; color:var(--text-body); line-height:1.6; text-align:left; margin-top:8px;">
+        <div style="font-size:11px; color:var(--text-body); line-height:1.5; text-align:left; margin-top:6px;">
           • Existing drains operate as one-way reactive systems.<br>
-          • Stormwater is dumped into sewers instead of being stored.<br>
-          • No integration between flood prevention and heatwave irrigation.
+          • Stormwater is dumped into sewers instead of stored.<br>
+          • No integration between flood prevention & irrigation.
         </div>
       </div>
     </div>
 
     <!-- SUMMARY BANNER -->
-    <div style="background:var(--accent-bg); border:1px solid #BAE6FD; padding:14px 18px; border-radius:8px; margin-top:4px; display:flex; align-items:center; gap:16px;">
-      <div style="width:40px; height:40px; border-radius:50%; background:#FFFFFF; border:1.5px solid #38BDF8; display:flex; align-items:center; justify-content:center; flex-shrink:0;">
-        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#0284C7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <div style="background:var(--accent-bg); border:1px solid #BAE6FD; padding:10px 14px; border-radius:8px; display:flex; align-items:center; gap:12px;">
+      <div style="width:34px; height:34px; border-radius:50%; background:#FFFFFF; border:1.5px solid #38BDF8; display:flex; align-items:center; justify-content:center; flex-shrink:0;">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#0284C7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
           <path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"/>
         </svg>
       </div>
       <div>
-        <div style="font-size:13px; font-weight:800; color:var(--accent-blue);">The Need for an Integrated Solution</div>
-        <div style="font-size:11.5px; color:var(--text-body); margin-top:3px; line-height:1.5;">
+        <div style="font-size:12.5px; font-weight:800; color:var(--accent-blue);">The Need for an Integrated Solution</div>
+        <div style="font-size:11px; color:var(--text-body); margin-top:2px; line-height:1.45;">
           Urban infrastructure requires a smart system capable of automatically switching between <strong>storing rainwater for drought irrigation</strong> and <strong>pre-draining tanks before severe storms land</strong>.
         </div>
       </div>
@@ -393,29 +374,29 @@
     <div class="header-right">TEAM ACE · SDS PLATFORM</div>
   </div>
 
-  <div class="slide-content" style="justify-content:center; gap:16px;">
+  <div class="slide-content" style="justify-content:center; gap:10px;">
     <div class="grid-2">
       <!-- JOB 1 -->
-      <div class="card" style="border-top:4px solid var(--accent-green);">
-        <img src="./job1_irrigation.png" alt="Heatwave Micro-Irrigation 2D Illustration" style="width:100%; height:130px; object-fit:contain; border-radius:6px; margin-bottom:12px; display:block;">
+      <div class="card" style="border-top:4px solid var(--accent-green); padding:12px 14px;">
+        <img src="./job1_irrigation.png" alt="Heatwave Micro-Irrigation 2D Illustration" style="width:100%; height:105px; object-fit:contain; border-radius:6px; margin-bottom:8px; display:block;">
         <div class="card-title" style="color:var(--accent-green);">
           JOB 1: Heatwave Micro-Irrigation (P1 Pump)
         </div>
-        <ul style="font-size:11.5px; color:var(--text-body); line-height:1.65; padding-left:16px; margin-top:8px;">
-          <li><strong>Trigger Condition:</strong> Clear weather (no rain forecast), Soil moisture &lt; 30%, Temp &ge; 30°C, and Tank storage &gt; 20%.</li>
+        <ul style="font-size:10.5px; color:var(--text-body); line-height:1.5; padding-left:14px; margin-top:6px;">
+          <li><strong>Trigger Condition:</strong> Clear weather, Soil moisture &lt; 30%, Temp &ge; 30°C, and Tank storage &gt; 20%.</li>
           <li><strong>Control Action:</strong> Activates <strong>P1 Irrigation Pump</strong> to deliver a 12-second pulse (~0.34 L) to the crop box.</li>
           <li><strong>Benefit:</strong> Recycles stored rainwater to preserve urban crops without wasting tap water.</li>
         </ul>
       </div>
 
       <!-- JOB 2 -->
-      <div class="card" style="border-top:4px solid var(--accent-orange);">
-        <img src="./job2_predrain.png" alt="Pre-Storm Flood Drainage 2D Illustration" style="width:100%; height:130px; object-fit:contain; border-radius:6px; margin-bottom:12px; display:block;">
+      <div class="card" style="border-top:4px solid var(--accent-orange); padding:12px 14px;">
+        <img src="./job2_predrain.png" alt="Pre-Storm Flood Drainage 2D Illustration" style="width:100%; height:105px; object-fit:contain; border-radius:6px; margin-bottom:8px; display:block;">
         <div class="card-title" style="color:var(--accent-orange);">
           JOB 2: Pre-Storm Flood Drainage (P2 Pump)
         </div>
-        <ul style="font-size:11.5px; color:var(--text-body); line-height:1.65; padding-left:16px; margin-top:8px;">
-          <li><strong>Trigger Condition:</strong> KMA Open API receives a Heavy Rain Forecast AND Tank storage level &gt; 20%.</li>
+        <ul style="font-size:10.5px; color:var(--text-body); line-height:1.5; padding-left:14px; margin-top:6px;">
+          <li><strong>Trigger Condition:</strong> KMA Open API receives Heavy Rain Forecast AND Tank storage level &gt; 20%.</li>
           <li><strong>Control Action:</strong> Activates <strong>P2 Pre-drain Pump</strong> to empty the tank down to 10% before downpour hits.</li>
           <li><strong>Benefit:</strong> Creates an empty storage buffer in advance, preventing urban sewer overload.</li>
         </ul>
@@ -423,11 +404,11 @@
     </div>
 
     <!-- Summary Banner -->
-    <div class="card" style="background:#F8FAFC; text-align:center; padding:12px 16px;">
-      <div style="font-size:13.5px; font-weight:800; color:var(--text-primary);">
+    <div class="card" style="background:#F8FAFC; text-align:center; padding:8px 14px;">
+      <div style="font-size:12.5px; font-weight:800; color:var(--text-primary);">
         The Rainwater Circularity Loop
       </div>
-      <div style="font-size:11.5px; color:var(--text-muted); margin-top:3px;">
+      <div style="font-size:10.5px; color:var(--text-muted); margin-top:2px;">
         The torrential downpour that threatens street flooding is stored into the tank, becoming the exact water source that cools the city during the next heatwave.
       </div>
     </div>
@@ -447,39 +428,30 @@
   <div class="slide-header">
     <div class="header-left">
       <div class="category">03 — SYSTEM ARCHITECTURE</div>
-      <div class="slide-title">Dumb Edge Node, Smart Hub System Architecture</div>
+      <div class="slide-title">System Architecture & Communication Protocol</div>
     </div>
     <div class="header-right">TEAM ACE · SDS PLATFORM</div>
   </div>
 
-  <div class="slide-content" style="justify-content:center; gap:20px;">
-    <div class="grid-3">
+  <div class="slide-content" style="justify-content:center; gap:14px;">
+    <!-- TOP ARCHITECTURE NODES (GRID-2: RASPBERRY PI CARD REMOVED AS REQUESTED) -->
+    <div class="grid-2">
       <!-- Node 1: Edge Node -->
-      <div class="card">
-        <div class="card-title" style="color:var(--accent-blue);">1. ESP32 Edge Node</div>
-        <div style="font-size:11.5px; color:var(--text-body); line-height:1.6;">
+      <div class="card" style="padding:14px 16px;">
+        <div class="card-title" style="color:var(--accent-blue); font-size:14px;">1. ESP32 Edge Node & Local Hardware</div>
+        <div style="font-size:11px; color:var(--text-body); line-height:1.6; margin-top:6px;">
           • <strong>Sensors:</strong> Capacitive Soil Moisture (ADC1), DHT22 Temp/Humidity, HC-SR04 Ultrasonic Tank Level.<br>
-          • <strong>Actuators:</strong> 2-Channel 5V Relay controlling P1 & P2 Submersible Pumps.<br>
-          • <strong>Role:</strong> Reads telemetry every 2 s, reports via MQTT, executes commands with 15 s safety watchdog.
+          • <strong>Actuators:</strong> 2-Channel 5V Relay controlling P1 Irrigation Pump & P2 Pre-drainage Pump.<br>
+          • <strong>Execution Role:</strong> Reads telemetry every 2 s, reports via MQTT JSON, executes commands with 15 s safety watchdog.
         </div>
       </div>
 
-      <!-- Node 2: Smart Hub -->
-      <div class="card">
-        <div class="card-title" style="color:var(--text-primary);">2. Raspberry Pi Main Hub</div>
-        <div style="font-size:11.5px; color:var(--text-body); line-height:1.6;">
-          • <strong>Mosquitto MQTT Broker:</strong> Handles real-time JSON messaging.<br>
-          • <strong>decision.py:</strong> Central decision engine evaluating state logic every 5 s.<br>
-          • <strong>FastAPI & SQLite:</strong> Serves system dashboard and records event telemetry logs.
-        </div>
-      </div>
-
-      <!-- Node 3: Forecast API -->
-      <div class="card">
-        <div class="card-title" style="color:var(--accent-green);">3. KMA Forecast API</div>
-        <div style="font-size:11.5px; color:var(--text-body); line-height:1.6;">
-          • <strong>Open API Polling:</strong> Fetches short-term forecast every 10 min.<br>
-          • <strong>Grid Conversion:</strong> Converts lat/lon to Lambert conformal conic grid.<br>
+      <!-- Node 2: Forecast API -->
+      <div class="card" style="padding:14px 16px;">
+        <div class="card-title" style="color:var(--accent-green); font-size:14px;">2. KMA Weather Forecast Open API</div>
+        <div style="font-size:11px; color:var(--text-body); line-height:1.6; margin-top:6px;">
+          • <strong>Open API Polling:</strong> Fetches short-term weather forecast every 10 min from KMA data portal.<br>
+          • <strong>Grid Conversion:</strong> Converts lat/lon geographic coordinates to Lambert conformal conic grid.<br>
           • <strong>Fail-Safe:</strong> API outages default to "last valid forecast" then "no rain", preventing erroneous drainage.
         </div>
       </div>
@@ -487,20 +459,20 @@
 
     <!-- Data Protocol Grid -->
     <div class="grid-2">
-      <div class="card" style="background:#0F172A; color:#E2E8F0;">
-        <div style="font-size:12px; font-weight:800; color:#38BDF8; margin-bottom:6px;">
+      <div class="card" style="background:#0F172A; color:#E2E8F0; padding:12px 16px;">
+        <div style="font-size:11.5px; font-weight:800; color:#38BDF8; margin-bottom:4px;">
           Telemetry Payload (ESP32 → Pi, 2 s)
         </div>
-        <div style="font-family:monospace; font-size:10.5px; line-height:1.5;">
+        <div style="font-family:monospace; font-size:10px; line-height:1.4;">
           { "ts": 1786342072.4, "node": "ace-esp32", "soil_moisture_pct": 27.4, "ambient_temp_c": 34.2, "tank_level_pct": 43.1 }
         </div>
       </div>
 
-      <div class="card" style="background:#0F172A; color:#E2E8F0;">
-        <div style="font-size:12px; font-weight:800; color:#38BDF8; margin-bottom:6px;">
+      <div class="card" style="background:#0F172A; color:#E2E8F0; padding:12px 16px;">
+        <div style="font-size:11.5px; font-weight:800; color:#38BDF8; margin-bottom:4px;">
           Command Payload (Pi → ESP32, 5 s)
         </div>
-        <div style="font-family:monospace; font-size:10.5px; line-height:1.5;">
+        <div style="font-family:monospace; font-size:10px; line-height:1.4;">
           { "mode": "GREENERY_IRRIGATION", "pump": true, "drain": false, "reason": "moisture 27%, 34.2C", "ttl_s": 15.0 }
         </div>
       </div>
@@ -526,44 +498,44 @@
     <div class="header-right">TEAM ACE · SDS PLATFORM</div>
   </div>
 
-  <div class="slide-content" style="display:grid; grid-template-columns: 0.85fr 1.15fr; gap:24px; align-items:center;">
+  <div class="slide-content" style="display:grid; grid-template-columns: 0.85fr 1.15fr; gap:20px; align-items:center;">
     <!-- LEFT SIDE: TITLE & ALGORITHM SCRIPT SUMMARY BLOCK -->
-    <div style="display:flex; flex-direction:column; gap:16px;">
+    <div style="display:flex; flex-direction:column; gap:12px;">
       <div>
-        <div style="font-size:12px; font-weight:800; color:var(--accent-blue); letter-spacing:2px; text-transform:uppercase; margin-bottom:6px;">
+        <div style="font-size:11px; font-weight:800; color:var(--accent-blue); letter-spacing:1.8px; text-transform:uppercase; margin-bottom:4px;">
           Core Decision Engine
         </div>
-        <h2 style="font-size:28px; font-weight:900; color:var(--accent-blue); line-height:1.25; letter-spacing:-0.5px;">
+        <h2 style="font-size:24px; font-weight:900; color:var(--accent-blue); line-height:1.2; letter-spacing:-0.5px;">
           5-Second Real-Time Decision Algorithm
         </h2>
-        <p style="font-size:13px; color:var(--text-body); margin-top:8px; line-height:1.55;">
+        <p style="font-size:12px; color:var(--text-body); margin-top:6px; line-height:1.5;">
           Evaluates sensor data and weather forecast every 5 seconds to automatically toggle between pre-storm flood protection and heatwave micro-irrigation.
         </p>
       </div>
 
-      <div class="card" style="border-left:4px solid var(--accent-blue); padding:14px;">
-        <div style="font-size:12.5px; font-weight:800; color:var(--text-primary); margin-bottom:4px;">
+      <div class="card" style="border-left:4px solid var(--accent-blue); padding:10px 12px;">
+        <div style="font-size:11.5px; font-weight:800; color:var(--text-primary); margin-bottom:2px;">
           ⏱ Real-Time Sensor & Weather Polling
         </div>
-        <div style="font-size:11px; color:var(--text-muted); line-height:1.5;">
+        <div style="font-size:10.5px; color:var(--text-muted); line-height:1.45;">
           Polls KMA forecast API, soil moisture, ambient temp, and water tank storage level every 5-second cycle.
         </div>
       </div>
 
-      <div class="card" style="border-left:4px solid var(--accent-orange); padding:14px;">
-        <div style="font-size:12.5px; font-weight:800; color:var(--accent-orange); margin-bottom:4px;">
+      <div class="card" style="border-left:4px solid var(--accent-orange); padding:10px 12px;">
+        <div style="font-size:11.5px; font-weight:800; color:var(--accent-orange); margin-bottom:2px;">
           🛡 Heavy Rain Priority Override
         </div>
-        <div style="font-size:11px; color:var(--text-muted); line-height:1.5;">
+        <div style="font-size:10.5px; color:var(--text-muted); line-height:1.45;">
           Heavy rain forecast triggers instant pre-drainage via P2 pump, clearing tank storage capacity before storm hits.
         </div>
       </div>
 
-      <div class="card" style="border-left:4px solid var(--accent-green); padding:14px;">
-        <div style="font-size:12.5px; font-weight:800; color:var(--accent-green); margin-bottom:4px;">
+      <div class="card" style="border-left:4px solid var(--accent-green); padding:10px 12px;">
+        <div style="font-size:11.5px; font-weight:800; color:var(--accent-green); margin-bottom:2px;">
           🌱 Smart Micro-Irrigation
         </div>
-        <div style="font-size:11px; color:var(--text-muted); line-height:1.5;">
+        <div style="font-size:10.5px; color:var(--text-muted); line-height:1.45;">
           Doses a 0.34 L pulse via P1 pump during hot (&ge;30°C) and dry (&lt;30% moisture) conditions when stored water is available.
         </div>
       </div>
@@ -571,7 +543,7 @@
 
     <!-- RIGHT SIDE: LARGE FLOWCHART DIAGRAM -->
     <div style="text-align:center; height:100%; display:flex; flex-direction:column; justify-content:center; align-items:center;">
-      <img src="./algorithm_flowchart.jpg" alt="Algorithm Flowchart" style="max-height:460px; width:auto; max-width:100%; border-radius:8px; border:1px solid var(--border); box-shadow:0 4px 16px rgba(0,0,0,0.08); object-fit:contain;">
+      <img src="./algorithm_flowchart.jpg" alt="Algorithm Flowchart" style="max-height:360px; width:auto; max-width:100%; border-radius:8px; border:1px solid var(--border); box-shadow:0 4px 16px rgba(0,0,0,0.08); object-fit:contain;">
     </div>
   </div>
 
@@ -594,7 +566,7 @@
     <div class="header-right">TEAM ACE · SDS PLATFORM</div>
   </div>
 
-  <div class="slide-content" style="justify-content:center; gap:16px;">
+  <div class="slide-content" style="justify-content:center; gap:12px;">
     <!-- COMPARISON TABLE -->
     <table class="custom-table">
       <thead>
@@ -634,26 +606,26 @@
     </table>
 
     <!-- COOLING FOG EXTENSION -->
-    <div class="card" style="margin-top:4px;">
-      <div class="card-title" style="color:var(--accent-blue);">
+    <div class="card" style="padding:10px 14px;">
+      <div class="card-title" style="color:var(--accent-blue); font-size:12.5px;">
         💨 Smart Shade Cooling Fog Integration & Innovations
       </div>
-      <div class="grid-4" style="margin-top:6px;">
+      <div class="grid-4" style="margin-top:4px;">
         <div>
-          <div style="font-size:11.5px; font-weight:700;">💧 Rainwater First</div>
-          <div style="font-size:10.5px; color:var(--text-muted); margin-top:2px;">Prioritizes stored rainwater over municipal tap water.</div>
+          <div style="font-size:11px; font-weight:700;">💧 Rainwater First</div>
+          <div style="font-size:10px; color:var(--text-muted); margin-top:2px;">Prioritizes stored rainwater over tap water.</div>
         </div>
         <div>
-          <div style="font-size:11.5px; font-weight:700;">🎯 Multi-Height Spray</div>
-          <div style="font-size:10.5px; color:var(--text-muted); margin-top:2px;">Nozzle heights for children (1.2m) & adults (1.8m).</div>
+          <div style="font-size:11px; font-weight:700;">🎯 Multi-Height Spray</div>
+          <div style="font-size:10px; color:var(--text-muted); margin-top:2px;">Nozzles for children (1.2m) & adults (1.8m).</div>
         </div>
         <div>
-          <div style="font-size:11.5px; font-weight:700;">🌡️ IoT Climate Control</div>
-          <div style="font-size:10.5px; color:var(--text-muted); margin-top:2px;">Lowers felt ambient temperature by 3~5°C.</div>
+          <div style="font-size:11px; font-weight:700;">🌡️ IoT Climate Control</div>
+          <div style="font-size:10px; color:var(--text-muted); margin-top:2px;">Lowers felt ambient temp by 3~5°C.</div>
         </div>
         <div>
-          <div style="font-size:11.5px; font-weight:700;">🛡️ 3-Tier Filtration</div>
-          <div style="font-size:10.5px; color:var(--text-muted); margin-top:2px;">Topsoil, fabric filter, and gravel prevent clogging.</div>
+          <div style="font-size:11px; font-weight:700;">🛡️ 3-Tier Filtration</div>
+          <div style="font-size:10px; color:var(--text-muted); margin-top:2px;">Topsoil, fabric, & gravel prevent clogging.</div>
         </div>
       </div>
     </div>
@@ -678,26 +650,26 @@
     <div class="header-right">TEAM ACE · SDS PLATFORM</div>
   </div>
 
-  <div class="slide-content" style="justify-content:center; align-items:center; text-align:center; gap:28px;">
+  <div class="slide-content" style="justify-content:center; align-items:center; text-align:center; gap:20px;">
     <div>
-      <div style="font-size:14px; font-weight:800; color:var(--accent-blue); letter-spacing:2px; text-transform:uppercase; margin-bottom:12px;">
+      <div style="font-size:13px; font-weight:800; color:var(--accent-blue); letter-spacing:2px; text-transform:uppercase; margin-bottom:8px;">
         Team ACE Project Presentation
       </div>
-      <h2 style="font-size:38px; font-weight:900; color:var(--text-primary); line-height:1.25; letter-spacing:-0.8px;">
+      <h2 style="font-size:34px; font-weight:900; color:var(--text-primary); line-height:1.25; letter-spacing:-0.8px;">
         SMART DRAIN & HEATWAVE RESPONSE SYSTEM
       </h2>
-      <p style="font-size:22px; font-weight:700; color:var(--accent-blue); margin-top:16px;">
+      <p style="font-size:20px; font-weight:700; color:var(--accent-blue); margin-top:12px;">
         Thank you for your time.
       </p>
     </div>
 
-    <div style="width:120px; height:2px; background:var(--accent-blue); margin:8px 0; opacity:0.3;"></div>
+    <div style="width:100px; height:2px; background:var(--accent-blue); margin:4px 0; opacity:0.3;"></div>
 
     <div>
-      <div style="font-size:30px; font-weight:900; color:var(--text-primary); letter-spacing:-0.5px;">
+      <div style="font-size:26px; font-weight:900; color:var(--text-primary); letter-spacing:-0.5px;">
         Question & Answer (Q&A)
       </div>
-      <div style="font-size:13.5px; color:var(--text-muted); margin-top:8px;">
+      <div style="font-size:12.5px; color:var(--text-muted); margin-top:6px;">
         We are ready for any questions or feedback.
       </div>
     </div>
