@@ -90,7 +90,7 @@ async function main() {
       const pptx = new pptxgen();
       pptx.layout = 'LAYOUT_16x9';
 
-      capturedImages.forEach((imgPath) => {
+      capturedImages.forEach((imgPath, idx) => {
         const slide = pptx.addSlide();
         slide.addImage({
           path: imgPath,
@@ -99,6 +99,22 @@ async function main() {
           w: '100%',
           h: '100%'
         });
+
+        // Slide 7 (index 6): Embed 12345678.mp4 video natively in PowerPoint!
+        if (idx === 6) {
+          const videoPath = 'C:\\Users\\Administrator\\Desktop\\ACE\\12345678.mp4';
+          if (fs.existsSync(videoPath)) {
+            console.log('Embedding 12345678.mp4 into Slide 7...');
+            slide.addMedia({
+              type: 'video',
+              path: videoPath,
+              x: 1.8,
+              y: 0.95,
+              w: 6.4,
+              h: 3.6
+            });
+          }
+        }
       });
 
       await pptx.writeFile({ fileName: outputPptxPath });
