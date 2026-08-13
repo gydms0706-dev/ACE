@@ -172,38 +172,8 @@
 <!-- ════════════════════════════════════════════
   SLIDE 1 : COVER
 ════════════════════════════════════════════ -->
-<section class="slide" style="padding: 22mm 24mm 16mm 24mm; position:relative;">
-  <!-- BACKGROUND GRAPHIC ELEMENT (WATER & CLIMATE SMART ECOSYSTEM WATERMARK) -->
-  <div style="position:absolute; right:15mm; top:52%; transform:translateY(-50%); z-index:0; pointer-events:none; opacity:0.12; width:440px; height:440px;">
-    <svg width="440" height="440" viewBox="0 0 400 400" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <!-- Tech Rings & Grid Lines -->
-      <circle cx="200" cy="200" r="180" stroke="#0284C7" stroke-width="3" stroke-dasharray="8 8"/>
-      <circle cx="200" cy="200" r="140" stroke="#0284C7" stroke-width="2"/>
-      <circle cx="200" cy="200" r="90" fill="#F0F9FF" stroke="#0284C7" stroke-width="2.5"/>
-      <line x1="20" y1="200" x2="380" y2="200" stroke="#0284C7" stroke-width="1.5" stroke-dasharray="4 4"/>
-      <line x1="200" y1="20" x2="200" y2="380" stroke="#0284C7" stroke-width="1.5" stroke-dasharray="4 4"/>
-
-      <!-- Water Droplet Core -->
-      <path d="M 200,110 C 200,110 260,190 260,225 C 260,258 233,285 200,285 C 167,285 140,258 140,225 C 140,190 200,110 200,110 Z" fill="#0284C7"/>
-      
-      <!-- Leaf & Sun Curves -->
-      <path d="M 200,180 Q 230,160 250,190 Q 230,220 200,180 Z" fill="#22C55E"/>
-      <path d="M 170,160 Q 185,140 200,160" stroke="#FFF" stroke-width="3" stroke-linecap="round"/>
-      
-      <!-- Concentric Ripple Waves -->
-      <path d="M 100,280 Q 200,320 300,280" stroke="#0284C7" stroke-width="4" stroke-linecap="round"/>
-      <path d="M 120,305 Q 200,340 280,305" stroke="#0284C7" stroke-width="3" stroke-linecap="round"/>
-
-      <!-- Bi-directional Flow Arrows -->
-      <path d="M 70,160 A 130 130 0 0 1 200,70" fill="none" stroke="#C2410C" stroke-width="4" stroke-linecap="round"/>
-      <polygon points="200,60 215,70 200,80" fill="#C2410C"/>
-
-      <path d="M 330,240 A 130 130 0 0 1 200,330" fill="none" stroke="#15803D" stroke-width="4" stroke-linecap="round"/>
-      <polygon points="200,320 185,330 200,340" fill="#15803D"/>
-    </svg>
-  </div>
-
-  <div style="display:flex; justify-content:space-between; align-items:center; border-bottom:3px solid var(--text-primary); padding-bottom:16px; position:relative; z-index:1;">
+<section class="slide" style="padding: 20mm 22mm 14mm 22mm;">
+  <div style="display:flex; justify-content:space-between; align-items:center; border-bottom:3px solid var(--text-primary); padding-bottom:14px;">
     <div style="font-size:12px; font-weight:800; letter-spacing:2px; color:var(--text-primary);">
       SMART CITY CLIMATE RESPONSE PROJECT
     </div>
@@ -212,33 +182,68 @@
     </div>
   </div>
 
-  <div class="slide-content" style="justify-content: center; gap: 24px; position:relative; z-index:1;">
-    <div>
-      <div style="font-size:14px; font-weight:800; color:var(--accent-blue); letter-spacing:2px; text-transform:uppercase; margin-bottom:8px;">
+  <div class="slide-content" style="display:flex; flex-direction:row; align-items:center; justify-content:space-between; gap:24px;">
+    <!-- LEFT TEXT & METADATA CONTENT -->
+    <div style="flex:1; max-width:580px;">
+      <div style="font-size:13.5px; font-weight:800; color:var(--accent-blue); letter-spacing:2px; text-transform:uppercase; margin-bottom:8px;">
         Team ACE Project Presentation
       </div>
-      <h1 style="font-size:44px; font-weight:900; line-height:1.2; color:var(--text-primary); letter-spacing:-1.2px;">
+      <h1 style="font-size:42px; font-weight:900; line-height:1.18; color:var(--text-primary); letter-spacing:-1.2px;">
         <span style="color:var(--accent-blue);">SMART DRAIN &</span><br>
         HEATWAVE RESPONSE SYSTEM
       </h1>
-      <p style="font-size:16px; color:var(--text-body); margin-top:16px; line-height:1.6; max-width:800px;">
+      <p style="font-size:15px; color:var(--text-body); margin-top:16px; line-height:1.6;">
         An integrated urban climate management platform that uses real-time weather API forecasts and IoT sensor data to proactively address <strong>heatwave droughts</strong> (automated micro-irrigation) and <strong>torrential rain</strong> (smart pre-storm drainage) using a single rainwater storage tank.
       </p>
+
+      <div class="grid-2" style="border-top:1px solid var(--border); padding-top:18px; margin-top:20px; max-width:480px;">
+        <div>
+          <div style="font-size:11px; font-weight:800; color:var(--text-muted); text-transform:uppercase;">Project Title</div>
+          <div style="font-size:14px; font-weight:800; color:var(--text-primary); margin-top:4px;">Smart Drain & Heatwave System</div>
+        </div>
+        <div>
+          <div style="font-size:11px; font-weight:800; color:var(--accent-blue); text-transform:uppercase;">Team</div>
+          <div style="font-size:14px; font-weight:800; color:var(--accent-blue); margin-top:4px;">Team ACE</div>
+        </div>
+      </div>
     </div>
 
-    <div class="grid-2" style="border-top:1px solid var(--border); padding-top:20px; margin-top:10px; max-width:500px;">
-      <div>
-        <div style="font-size:11px; font-weight:800; color:var(--text-muted); text-transform:uppercase;">Project Title</div>
-        <div style="font-size:14px; font-weight:800; color:var(--text-primary); margin-top:4px;">Smart Drain & Heatwave System</div>
+    <!-- RIGHT HIGH-VISIBILITY VIVID ILLUSTRATION CARD -->
+    <div style="width:310px; background:#F0F9FF; border:2px solid #BAE6FD; border-radius:12px; padding:18px 14px; text-align:center; box-shadow:0 8px 24px rgba(2, 132, 199, 0.12); flex-shrink:0;">
+      <div style="font-size:12px; font-weight:800; color:var(--accent-blue); letter-spacing:1.5px; text-transform:uppercase; margin-bottom:8px;">
+        Smart Ecosystem Diagram
       </div>
-      <div>
-        <div style="font-size:11px; font-weight:800; color:var(--text-muted); text-transform:uppercase;">Team</div>
-        <div style="font-size:14px; font-weight:800; color:var(--accent-blue); margin-top:4px;">Team ACE</div>
+      <svg width="270" height="230" viewBox="0 0 280 240" fill="none" xmlns="http://www.w3.org/2000/svg" style="display:block; margin:0 auto;">
+        <!-- Background Tech Rings -->
+        <circle cx="140" cy="120" r="105" fill="#E0F2FE" stroke="#38BDF8" stroke-width="2" stroke-dasharray="6 4"/>
+        <circle cx="140" cy="120" r="80" fill="#FFFFFF" stroke="#0284C7" stroke-width="2.5"/>
+
+        <!-- Bi-directional Flow Arrows -->
+        <path d="M 50,120 A 90 90 0 0 1 140,30" fill="none" stroke="#C2410C" stroke-width="4" stroke-linecap="round"/>
+        <polygon points="140,22 154,30 140,38" fill="#C2410C"/>
+
+        <path d="M 230,120 A 90 90 0 0 1 140,210" fill="none" stroke="#15803D" stroke-width="4" stroke-linecap="round"/>
+        <polygon points="140,202 126,210 140,218" fill="#15803D"/>
+
+        <!-- Water Droplet Core with Leaf -->
+        <path d="M 140,65 C 140,65 180,115 180,140 C 180,162 162,180 140,180 C 118,180 100,162 100,140 C 100,115 140,65 140,65 Z" fill="#0284C7"/>
+        <path d="M 140,115 Q 160,100 170,125 Q 155,145 140,115 Z" fill="#22C55E"/>
+        <circle cx="125" cy="130" r="6" fill="#7DD3FC" opacity="0.8"/>
+
+        <!-- Floating Action Badges -->
+        <rect x="15" y="45" width="105" height="22" rx="11" fill="#FFEDD5" stroke="#FDBA74" stroke-width="1.5"/>
+        <text x="67" y="60" font-size="9.5" fill="#C2410C" font-weight="bold" text-anchor="middle">🌧 Pre-Storm Drain</text>
+
+        <rect x="160" y="170" width="105" height="22" rx="11" fill="#DCFCE7" stroke="#86EFAC" stroke-width="1.5"/>
+        <text x="212" y="185" font-size="9.5" fill="#15803D" font-weight="bold" text-anchor="middle">🌱 Heatwave Irrigate</text>
+      </svg>
+      <div style="font-size:11px; font-weight:700; color:var(--primary-dark); margin-top:6px;">
+        1 Tank · Dual Hazard Response
       </div>
     </div>
   </div>
 
-  <div class="slide-footer" style="position:relative; z-index:1;">
+  <div class="slide-footer">
     <div>TEAM ACE PRESENTATION</div>
     <div class="footer-num">01 / 08</div>
   </div>
