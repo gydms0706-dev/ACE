@@ -172,8 +172,8 @@
 <!-- ════════════════════════════════════════════
   SLIDE 1 : COVER
 ════════════════════════════════════════════ -->
-<section class="slide" style="padding: 20mm 22mm 14mm 22mm;">
-  <div style="display:flex; justify-content:space-between; align-items:center; border-bottom:3px solid var(--text-primary); padding-bottom:14px;">
+<section class="slide" style="padding: 20mm 22mm 14mm 22mm; position:relative;">
+  <div style="display:flex; justify-content:space-between; align-items:center; border-bottom:3px solid var(--text-primary); padding-bottom:14px; position:relative; z-index:1;">
     <div style="font-size:12px; font-weight:800; letter-spacing:2px; color:var(--text-primary);">
       SMART CITY CLIMATE RESPONSE PROJECT
     </div>
@@ -182,9 +182,9 @@
     </div>
   </div>
 
-  <div class="slide-content" style="display:flex; flex-direction:row; align-items:center; justify-content:space-between; gap:24px;">
+  <div class="slide-content" style="display:flex; flex-direction:row; align-items:center; justify-content:space-between; gap:24px; position:relative; z-index:1;">
     <!-- LEFT TEXT & METADATA CONTENT -->
-    <div style="flex:1; max-width:580px;">
+    <div style="flex:1; max-width:560px;">
       <div style="font-size:13.5px; font-weight:800; color:var(--accent-blue); letter-spacing:2px; text-transform:uppercase; margin-bottom:8px;">
         Team ACE Project Presentation
       </div>
@@ -208,42 +208,73 @@
       </div>
     </div>
 
-    <!-- RIGHT HIGH-VISIBILITY VIVID ILLUSTRATION CARD -->
-    <div style="width:310px; background:#F0F9FF; border:2px solid #BAE6FD; border-radius:12px; padding:18px 14px; text-align:center; box-shadow:0 8px 24px rgba(2, 132, 199, 0.12); flex-shrink:0;">
-      <div style="font-size:12px; font-weight:800; color:var(--accent-blue); letter-spacing:1.5px; text-transform:uppercase; margin-bottom:8px;">
-        Smart Ecosystem Diagram
-      </div>
-      <svg width="270" height="230" viewBox="0 0 280 240" fill="none" xmlns="http://www.w3.org/2000/svg" style="display:block; margin:0 auto;">
-        <!-- Background Tech Rings -->
-        <circle cx="140" cy="120" r="105" fill="#E0F2FE" stroke="#38BDF8" stroke-width="2" stroke-dasharray="6 4"/>
-        <circle cx="140" cy="120" r="80" fill="#FFFFFF" stroke="#0284C7" stroke-width="2.5"/>
+    <!-- RIGHT FRAMELESS LARGE WATER DROPLETS & BUBBLES VECTOR (NO BOX, NO TEXT, HIGH VISIBILITY OPACITY) -->
+    <div style="width:360px; height:340px; display:flex; align-items:center; justify-content:center; flex-shrink:0;">
+      <svg width="360" height="340" viewBox="0 0 360 340" fill="none" xmlns="http://www.w3.org/2000/svg" style="display:block;">
+        <defs>
+          <radialGradient id="bubbleGlow1" cx="30%" cy="30%" r="70%">
+            <stop offset="0%" stop-color="#7DD3FC" stop-opacity="0.9"/>
+            <stop offset="50%" stop-color="#38BDF8" stop-opacity="0.75"/>
+            <stop offset="100%" stop-color="#0284C7" stop-opacity="0.85"/>
+          </radialGradient>
 
-        <!-- Bi-directional Flow Arrows -->
-        <path d="M 50,120 A 90 90 0 0 1 140,30" fill="none" stroke="#C2410C" stroke-width="4" stroke-linecap="round"/>
-        <polygon points="140,22 154,30 140,38" fill="#C2410C"/>
+          <radialGradient id="bubbleGlow2" cx="35%" cy="35%" r="65%">
+            <stop offset="0%" stop-color="#BAE6FD" stop-opacity="0.95"/>
+            <stop offset="70%" stop-color="#0284C7" stop-opacity="0.7"/>
+            <stop offset="100%" stop-color="#0369A1" stop-opacity="0.85"/>
+          </radialGradient>
 
-        <path d="M 230,120 A 90 90 0 0 1 140,210" fill="none" stroke="#15803D" stroke-width="4" stroke-linecap="round"/>
-        <polygon points="140,202 126,210 140,218" fill="#15803D"/>
+          <linearGradient id="dropGradMain" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#38BDF8"/>
+            <stop offset="50%" stop-color="#0284C7"/>
+            <stop offset="100%" stop-color="#0369A1"/>
+          </linearGradient>
+        </defs>
 
-        <!-- Water Droplet Core with Leaf -->
-        <path d="M 140,65 C 140,65 180,115 180,140 C 180,162 162,180 140,180 C 118,180 100,162 100,140 C 100,115 140,65 140,65 Z" fill="#0284C7"/>
-        <path d="M 140,115 Q 160,100 170,125 Q 155,145 140,115 Z" fill="#22C55E"/>
-        <circle cx="125" cy="130" r="6" fill="#7DD3FC" opacity="0.8"/>
+        <!-- Outer Soft Water Ripple Rings -->
+        <circle cx="180" cy="170" r="145" stroke="#BAE6FD" stroke-width="2.5" stroke-dasharray="8 6" opacity="0.65"/>
+        <circle cx="180" cy="170" r="115" stroke="#38BDF8" stroke-width="2" opacity="0.5"/>
 
-        <!-- Floating Action Badges -->
-        <rect x="15" y="45" width="105" height="22" rx="11" fill="#FFEDD5" stroke="#FDBA74" stroke-width="1.5"/>
-        <text x="67" y="60" font-size="9.5" fill="#C2410C" font-weight="bold" text-anchor="middle">🌧 Pre-Storm Drain</text>
+        <!-- Main Center Water Droplet -->
+        <path d="M 180,50 C 180,50 245,130 245,170 C 245,205 216,234 180,234 C 144,234 115,205 115,170 C 115,130 180,50 180,50 Z" fill="url(#dropGradMain)" opacity="0.9"/>
+        <!-- Droplet Light Highlight Curve -->
+        <path d="M 160,110 C 150,130 145,150 145,165" stroke="#FFFFFF" stroke-width="5" stroke-linecap="round" opacity="0.85"/>
+        <circle cx="195" cy="180" r="10" fill="#FFFFFF" opacity="0.5"/>
 
-        <rect x="160" y="170" width="105" height="22" rx="11" fill="#DCFCE7" stroke="#86EFAC" stroke-width="1.5"/>
-        <text x="212" y="185" font-size="9.5" fill="#15803D" font-weight="bold" text-anchor="middle">🌱 Heatwave Irrigate</text>
+        <!-- Surrounding Floating Water Bubbles (Various Sizes & Clear Opacity) -->
+        <!-- Bubble Top Right -->
+        <circle cx="270" cy="85" r="32" fill="url(#bubbleGlow1)"/>
+        <circle cx="260" cy="75" r="9" fill="#FFFFFF" opacity="0.75"/>
+
+        <!-- Bubble Bottom Left -->
+        <circle cx="85" cy="225" r="42" fill="url(#bubbleGlow2)"/>
+        <circle cx="72" cy="210" r="12" fill="#FFFFFF" opacity="0.8"/>
+
+        <!-- Bubble Small Mid Left -->
+        <circle cx="70" cy="110" r="22" fill="url(#bubbleGlow1)"/>
+        <circle cx="64" cy="102" r="6" fill="#FFFFFF" opacity="0.7"/>
+
+        <!-- Bubble Small Top Left -->
+        <circle cx="115" cy="45" r="15" fill="url(#bubbleGlow2)"/>
+        <circle cx="110" cy="40" r="4" fill="#FFFFFF" opacity="0.8"/>
+
+        <!-- Bubble Mid Right -->
+        <circle cx="295" cy="185" r="25" fill="url(#bubbleGlow1)"/>
+        <circle cx="288" cy="178" r="7" fill="#FFFFFF" opacity="0.75"/>
+
+        <!-- Bubble Bottom Right Tiny -->
+        <circle cx="245" cy="275" r="18" fill="url(#bubbleGlow2)"/>
+        <circle cx="240" cy="270" r="5" fill="#FFFFFF" opacity="0.8"/>
+
+        <!-- Small Splash Accent Dots -->
+        <circle cx="215" cy="65" r="7" fill="#38BDF8" opacity="0.8"/>
+        <circle cx="140" cy="30" r="5" fill="#7DD3FC" opacity="0.85"/>
+        <circle cx="105" cy="270" r="8" fill="#0284C7" opacity="0.75"/>
       </svg>
-      <div style="font-size:11px; font-weight:700; color:var(--primary-dark); margin-top:6px;">
-        1 Tank · Dual Hazard Response
-      </div>
     </div>
   </div>
 
-  <div class="slide-footer">
+  <div class="slide-footer" style="position:relative; z-index:1;">
     <div>TEAM ACE PRESENTATION</div>
     <div class="footer-num">01 / 08</div>
   </div>
