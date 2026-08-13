@@ -526,13 +526,8 @@
     <div class="header-right">TEAM ACE · SDS PLATFORM</div>
   </div>
 
-  <div class="slide-content" style="display:grid; grid-template-columns: 1.15fr 0.85fr; gap:24px; align-items:center;">
-    <!-- LEFT SIDE: LARGE FLOWCHART DIAGRAM -->
-    <div style="text-align:center; height:100%; display:flex; flex-direction:column; justify-content:center; align-items:center;">
-      <img src="./algorithm_flowchart.jpg" alt="Algorithm Flowchart" style="max-height:460px; width:auto; max-width:100%; border-radius:8px; border:1px solid var(--border); box-shadow:0 4px 16px rgba(0,0,0,0.08); object-fit:contain;">
-    </div>
-
-    <!-- RIGHT SIDE: LARGE TITLE & ALGORITHM SUMMARY BLOCK -->
+  <div class="slide-content" style="display:grid; grid-template-columns: 0.85fr 1.15fr; gap:24px; align-items:center;">
+    <!-- LEFT SIDE: TITLE & ALGORITHM SCRIPT SUMMARY BLOCK -->
     <div style="display:flex; flex-direction:column; gap:16px;">
       <div>
         <div style="font-size:12px; font-weight:800; color:var(--accent-blue); letter-spacing:2px; text-transform:uppercase; margin-bottom:6px;">
@@ -542,36 +537,41 @@
           5-Second Real-Time Decision Algorithm
         </h2>
         <p style="font-size:13px; color:var(--text-body); margin-top:8px; line-height:1.55;">
-          The Raspberry Pi Python decision engine continuously evaluates state logic every 5 seconds to determine pump actions and system operating modes.
+          Evaluates sensor data and weather forecast every 5 seconds to automatically toggle between pre-storm flood protection and heatwave micro-irrigation.
         </p>
       </div>
 
       <div class="card" style="border-left:4px solid var(--accent-blue); padding:14px;">
         <div style="font-size:12.5px; font-weight:800; color:var(--text-primary); margin-bottom:4px;">
-          ⏱ 5-Second Real-Time Evaluation
+          ⏱ Real-Time Sensor & Weather Polling
         </div>
         <div style="font-size:11px; color:var(--text-muted); line-height:1.5;">
-          Polls KMA forecast Open API and sensor telemetry (Soil moisture, Temp, Tank level) every cycle.
+          Polls KMA forecast API, soil moisture, ambient temp, and water tank storage level every 5-second cycle.
         </div>
       </div>
 
       <div class="card" style="border-left:4px solid var(--accent-orange); padding:14px;">
         <div style="font-size:12.5px; font-weight:800; color:var(--accent-orange); margin-bottom:4px;">
-          🛡 Strict Priority Override
+          🛡 Heavy Rain Priority Override
         </div>
         <div style="font-size:11px; color:var(--text-muted); line-height:1.5;">
-          Flood prevention takes absolute precedence. Heavy rain forecast instantly cancels irrigation and triggers P2 pre-drainage.
+          Heavy rain forecast triggers instant pre-drainage via P2 pump, clearing tank storage capacity before storm hits.
         </div>
       </div>
 
       <div class="card" style="border-left:4px solid var(--accent-green); padding:14px;">
         <div style="font-size:12.5px; font-weight:800; color:var(--accent-green); margin-bottom:4px;">
-          🌱 Micro-Dosing Control
+          🌱 Smart Micro-Irrigation
         </div>
         <div style="font-size:11px; color:var(--text-muted); line-height:1.5;">
-          Irrigates only when dry (soil &lt; 30%), hot (temp &ge; 30°C), and water is available (tank &gt; 20%).
+          Doses a 0.34 L pulse via P1 pump during hot (&ge;30°C) and dry (&lt;30% moisture) conditions when stored water is available.
         </div>
       </div>
+    </div>
+
+    <!-- RIGHT SIDE: LARGE FLOWCHART DIAGRAM -->
+    <div style="text-align:center; height:100%; display:flex; flex-direction:column; justify-content:center; align-items:center;">
+      <img src="./algorithm_flowchart.jpg" alt="Algorithm Flowchart" style="max-height:460px; width:auto; max-width:100%; border-radius:8px; border:1px solid var(--border); box-shadow:0 4px 16px rgba(0,0,0,0.08); object-fit:contain;">
     </div>
   </div>
 
