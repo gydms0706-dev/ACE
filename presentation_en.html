@@ -172,8 +172,38 @@
 <!-- ════════════════════════════════════════════
   SLIDE 1 : COVER
 ════════════════════════════════════════════ -->
-<section class="slide" style="padding: 22mm 24mm 16mm 24mm;">
-  <div style="display:flex; justify-content:space-between; align-items:center; border-bottom:3px solid var(--text-primary); padding-bottom:16px;">
+<section class="slide" style="padding: 22mm 24mm 16mm 24mm; position:relative;">
+  <!-- BACKGROUND GRAPHIC ELEMENT (WATER & CLIMATE SMART ECOSYSTEM WATERMARK) -->
+  <div style="position:absolute; right:15mm; top:52%; transform:translateY(-50%); z-index:0; pointer-events:none; opacity:0.12; width:440px; height:440px;">
+    <svg width="440" height="440" viewBox="0 0 400 400" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <!-- Tech Rings & Grid Lines -->
+      <circle cx="200" cy="200" r="180" stroke="#0284C7" stroke-width="3" stroke-dasharray="8 8"/>
+      <circle cx="200" cy="200" r="140" stroke="#0284C7" stroke-width="2"/>
+      <circle cx="200" cy="200" r="90" fill="#F0F9FF" stroke="#0284C7" stroke-width="2.5"/>
+      <line x1="20" y1="200" x2="380" y2="200" stroke="#0284C7" stroke-width="1.5" stroke-dasharray="4 4"/>
+      <line x1="200" y1="20" x2="200" y2="380" stroke="#0284C7" stroke-width="1.5" stroke-dasharray="4 4"/>
+
+      <!-- Water Droplet Core -->
+      <path d="M 200,110 C 200,110 260,190 260,225 C 260,258 233,285 200,285 C 167,285 140,258 140,225 C 140,190 200,110 200,110 Z" fill="#0284C7"/>
+      
+      <!-- Leaf & Sun Curves -->
+      <path d="M 200,180 Q 230,160 250,190 Q 230,220 200,180 Z" fill="#22C55E"/>
+      <path d="M 170,160 Q 185,140 200,160" stroke="#FFF" stroke-width="3" stroke-linecap="round"/>
+      
+      <!-- Concentric Ripple Waves -->
+      <path d="M 100,280 Q 200,320 300,280" stroke="#0284C7" stroke-width="4" stroke-linecap="round"/>
+      <path d="M 120,305 Q 200,340 280,305" stroke="#0284C7" stroke-width="3" stroke-linecap="round"/>
+
+      <!-- Bi-directional Flow Arrows -->
+      <path d="M 70,160 A 130 130 0 0 1 200,70" fill="none" stroke="#C2410C" stroke-width="4" stroke-linecap="round"/>
+      <polygon points="200,60 215,70 200,80" fill="#C2410C"/>
+
+      <path d="M 330,240 A 130 130 0 0 1 200,330" fill="none" stroke="#15803D" stroke-width="4" stroke-linecap="round"/>
+      <polygon points="200,320 185,330 200,340" fill="#15803D"/>
+    </svg>
+  </div>
+
+  <div style="display:flex; justify-content:space-between; align-items:center; border-bottom:3px solid var(--text-primary); padding-bottom:16px; position:relative; z-index:1;">
     <div style="font-size:12px; font-weight:800; letter-spacing:2px; color:var(--text-primary);">
       SMART CITY CLIMATE RESPONSE PROJECT
     </div>
@@ -182,7 +212,7 @@
     </div>
   </div>
 
-  <div class="slide-content" style="justify-content: center; gap: 24px;">
+  <div class="slide-content" style="justify-content: center; gap: 24px; position:relative; z-index:1;">
     <div>
       <div style="font-size:14px; font-weight:800; color:var(--accent-blue); letter-spacing:2px; text-transform:uppercase; margin-bottom:8px;">
         Team ACE Project Presentation
@@ -208,7 +238,7 @@
     </div>
   </div>
 
-  <div class="slide-footer">
+  <div class="slide-footer" style="position:relative; z-index:1;">
     <div>TEAM ACE PRESENTATION</div>
     <div class="footer-num">01 / 08</div>
   </div>
