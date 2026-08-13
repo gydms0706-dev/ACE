@@ -521,14 +521,57 @@
   <div class="slide-header">
     <div class="header-left">
       <div class="category">04 — CONTROL LOGIC & ALGORITHM</div>
-      <div class="slide-title">5-Second Real-Time Decision Algorithm Flowchart</div>
+      <div class="slide-title">System Decision Logic</div>
     </div>
     <div class="header-right">TEAM ACE · SDS PLATFORM</div>
   </div>
 
-  <div class="slide-content" style="justify-content:center; align-items:center; text-align:center;">
-    <div style="width:100%; height:100%; display:flex; flex-direction:column; justify-content:center; align-items:center;">
-      <img src="./algorithm_flowchart.jpg" alt="Algorithm Flowchart" style="max-height:480px; width:auto; max-width:100%; border-radius:8px; border:1px solid var(--border); box-shadow:0 4px 16px rgba(0,0,0,0.08); object-fit:contain;">
+  <div class="slide-content" style="display:grid; grid-template-columns: 1.15fr 0.85fr; gap:24px; align-items:center;">
+    <!-- LEFT SIDE: LARGE FLOWCHART DIAGRAM -->
+    <div style="text-align:center; height:100%; display:flex; flex-direction:column; justify-content:center; align-items:center;">
+      <img src="./algorithm_flowchart.jpg" alt="Algorithm Flowchart" style="max-height:460px; width:auto; max-width:100%; border-radius:8px; border:1px solid var(--border); box-shadow:0 4px 16px rgba(0,0,0,0.08); object-fit:contain;">
+    </div>
+
+    <!-- RIGHT SIDE: LARGE TITLE & ALGORITHM SUMMARY BLOCK -->
+    <div style="display:flex; flex-direction:column; gap:16px;">
+      <div>
+        <div style="font-size:12px; font-weight:800; color:var(--accent-blue); letter-spacing:2px; text-transform:uppercase; margin-bottom:6px;">
+          Core Decision Engine
+        </div>
+        <h2 style="font-size:28px; font-weight:900; color:var(--accent-blue); line-height:1.25; letter-spacing:-0.5px;">
+          5-Second Real-Time Decision Algorithm
+        </h2>
+        <p style="font-size:13px; color:var(--text-body); margin-top:8px; line-height:1.55;">
+          The Raspberry Pi Python decision engine continuously evaluates state logic every 5 seconds to determine pump actions and system operating modes.
+        </p>
+      </div>
+
+      <div class="card" style="border-left:4px solid var(--accent-blue); padding:14px;">
+        <div style="font-size:12.5px; font-weight:800; color:var(--text-primary); margin-bottom:4px;">
+          ⏱ 5-Second Real-Time Evaluation
+        </div>
+        <div style="font-size:11px; color:var(--text-muted); line-height:1.5;">
+          Polls KMA forecast Open API and sensor telemetry (Soil moisture, Temp, Tank level) every cycle.
+        </div>
+      </div>
+
+      <div class="card" style="border-left:4px solid var(--accent-orange); padding:14px;">
+        <div style="font-size:12.5px; font-weight:800; color:var(--accent-orange); margin-bottom:4px;">
+          🛡 Strict Priority Override
+        </div>
+        <div style="font-size:11px; color:var(--text-muted); line-height:1.5;">
+          Flood prevention takes absolute precedence. Heavy rain forecast instantly cancels irrigation and triggers P2 pre-drainage.
+        </div>
+      </div>
+
+      <div class="card" style="border-left:4px solid var(--accent-green); padding:14px;">
+        <div style="font-size:12.5px; font-weight:800; color:var(--accent-green); margin-bottom:4px;">
+          🌱 Micro-Dosing Control
+        </div>
+        <div style="font-size:11px; color:var(--text-muted); line-height:1.5;">
+          Irrigates only when dry (soil &lt; 30%), hot (temp &ge; 30°C), and water is available (tank &gt; 20%).
+        </div>
+      </div>
     </div>
   </div>
 
