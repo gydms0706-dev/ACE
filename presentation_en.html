@@ -393,18 +393,15 @@
     <div class="header-right">TEAM ACE · SDS PLATFORM</div>
   </div>
 
-  <div class="slide-content" style="justify-content:center; gap:20px;">
-    <div style="font-size:14px; color:var(--text-body); line-height:1.5;">
-      Team ACE's SDS Platform utilizes a single 6 L storage tank to manage both heatwave irrigation and pre-storm flood protection.
-    </div>
-
+  <div class="slide-content" style="justify-content:center; gap:16px;">
     <div class="grid-2">
       <!-- JOB 1 -->
-      <div class="card" style="border-left:4px solid var(--accent-green);">
-        <div class="card-title" style="color:var(--accent-green); display:flex; align-items:center; gap:8px;">
-          <span>🌱</span> JOB 1: Heatwave Micro-Irrigation (P1 Pump)
+      <div class="card" style="border-top:4px solid var(--accent-green);">
+        <img src="./job1_irrigation.png" alt="Heatwave Micro-Irrigation 2D Illustration" style="width:100%; height:130px; object-fit:contain; border-radius:6px; margin-bottom:12px; display:block;">
+        <div class="card-title" style="color:var(--accent-green);">
+          JOB 1: Heatwave Micro-Irrigation (P1 Pump)
         </div>
-        <ul style="font-size:11.5px; color:var(--text-body); line-height:1.65; padding-left:16px;">
+        <ul style="font-size:11.5px; color:var(--text-body); line-height:1.65; padding-left:16px; margin-top:8px;">
           <li><strong>Trigger Condition:</strong> Clear weather (no rain forecast), Soil moisture &lt; 30%, Temp &ge; 30°C, and Tank storage &gt; 20%.</li>
           <li><strong>Control Action:</strong> Activates <strong>P1 Irrigation Pump</strong> to deliver a 12-second pulse (~0.34 L) to the crop box.</li>
           <li><strong>Benefit:</strong> Recycles stored rainwater to preserve urban crops without wasting tap water.</li>
@@ -412,24 +409,25 @@
       </div>
 
       <!-- JOB 2 -->
-      <div class="card" style="border-left:4px solid var(--accent-orange);">
-        <div class="card-title" style="color:var(--accent-orange); display:flex; align-items:center; gap:8px;">
-          <span>🌧</span> JOB 2: Pre-Storm Flood Drainage (P2 Pump)
+      <div class="card" style="border-top:4px solid var(--accent-orange);">
+        <img src="./job2_predrain.png" alt="Pre-Storm Flood Drainage 2D Illustration" style="width:100%; height:130px; object-fit:contain; border-radius:6px; margin-bottom:12px; display:block;">
+        <div class="card-title" style="color:var(--accent-orange);">
+          JOB 2: Pre-Storm Flood Drainage (P2 Pump)
         </div>
-        <ul style="font-size:11.5px; color:var(--text-body); line-height:1.65; padding-left:16px;">
+        <ul style="font-size:11.5px; color:var(--text-body); line-height:1.65; padding-left:16px; margin-top:8px;">
           <li><strong>Trigger Condition:</strong> KMA Open API receives a Heavy Rain Forecast AND Tank storage level &gt; 20%.</li>
           <li><strong>Control Action:</strong> Activates <strong>P2 Pre-drain Pump</strong> to empty the tank down to 10% before downpour hits.</li>
-          <li><strong>Benefit:</strong> Creates a empty storage buffer in advance, preventing urban sewer overload.</li>
+          <li><strong>Benefit:</strong> Creates an empty storage buffer in advance, preventing urban sewer overload.</li>
         </ul>
       </div>
     </div>
 
     <!-- Summary Banner -->
-    <div class="card" style="background:#F8FAFC; text-align:center;">
+    <div class="card" style="background:#F8FAFC; text-align:center; padding:12px 16px;">
       <div style="font-size:13.5px; font-weight:800; color:var(--text-primary);">
-        🔄 The Rainwater Circularity Loop
+        The Rainwater Circularity Loop
       </div>
-      <div style="font-size:11.5px; color:var(--text-muted); margin-top:4px;">
+      <div style="font-size:11.5px; color:var(--text-muted); margin-top:3px;">
         The torrential downpour that threatens street flooding is stored into the tank, becoming the exact water source that cools the city during the next heatwave.
       </div>
     </div>
